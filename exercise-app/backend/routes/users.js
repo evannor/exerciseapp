@@ -12,6 +12,8 @@ router.route('/').get((req, res) => {
 // POST request /users/add
 router.route('/add').post((req, res) => {
   // Create a new User in the DB
+  // REFACTOR: CHECK TO CONFIRM USER NOT ALREADY IN DB
+  // REFACTOR: CHANGE ALL CASING PRIOR TO LOADING USER TO DB
   const username = req.body.username;
 
   const newUser = new User({username});
