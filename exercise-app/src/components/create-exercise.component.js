@@ -72,7 +72,7 @@ function CreateExercise() {
     e.preventDefault();
 
     console.log(exercise);
-    // window.location = "/";
+    window.location = '/';
   }
 
   return <div>
